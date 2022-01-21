@@ -1,0 +1,35 @@
+/*CSS DOCUMENT*/
+
+h1{
+    color:rgb(24,27,184);
+    text-transform: uppercase;
+}
+
+h3{
+    font-family:serif;
+    font-size: 16pt;
+    color:rgb(24,27,184);
+    text-transform: uppercase;
+}
+h4{
+    margin-bottom: 0em;
+    font-size: 12pt;
+    font-family:sans-serif;
+    color:rgb(53,53,61);
+}
+
+p{
+    color:rgb(53,53,61);
+}
+
+ul{
+    font-family:sans-serif;
+    font-size: 10pt;
+    margin: 0em, 0em, 1em, 0em;
+}
+
+
+.price{
+    font-style:italic;
+    margin-top: 0em;
+}
