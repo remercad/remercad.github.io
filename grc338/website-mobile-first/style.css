@@ -1,0 +1,93 @@
+/*CSS DOCUMENT*/
+img {
+    width: 100%; 
+}
+
+div.container {  
+    max-width: 70em;  
+    margin: auto;  
+
+}  
+
+nav ul {
+    padding:0;
+}
+
+nav ul li{
+    display:inline;
+    list-style: none;
+    margin: auto;
+    font-family: serif;
+    color: #000000;
+}
+
+nav ul li a:hover{
+    color:#647a06;
+}
+a{
+    text-decoration: none;
+    color:rgb(180,141,50);
+    padding: 0em 3em 0em 0em;
+    margin: auto;
+    font-family:serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+body{
+    background-color:#f3f3ec;
+    padding: 0em 1em 0em 1em;
+}
+ul{
+    list-style: none;
+}
+
+h1{
+    width: 5em;
+}
+
+h2{
+    color:#647a06;
+    text-transform: uppercase;
+    margin: 0.5em 1em 0.5em 1.5em;
+}
+
+h3{
+    font-family:serif;
+    color: #86941c;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0.5em 1em 0.5em 2em;
+}
+
+h4{
+    margin-top: 1.5em;
+    font-size: 1em;
+    font-family:serif;
+}
+
+p{
+    color:rgb(53,53,61);
+    margin: 0.5em 1em 3em 2.2em;
+}
+
+.description{
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.price{
+    font-style:italic;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+figure{
+    margin:0;
+}
+
+footer {
+	background-color: #ced49c;
+	color:#ffffff;
+	padding: 1em;
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
