@@ -1,0 +1,100 @@
+/*CSS document*/
+
+body {
+    background-color: #fcfcfc;
+    
+
+}
+
+h1 img{
+    margin-bottom: -2em;
+}
+p{
+    color: #262626;
+    font-family: semplicitapro, sans-serif; 
+    text-decoration: none; 
+    
+}
+
+aside{
+    font-family: semplicitapro, sans-serif; 
+    text-decoration: none;
+    
+}
+
+figcaption{
+    font-family: semplicitapro, sans-serif; 
+    text-decoration: none;
+    font-size: 10pt;
+    margin-bottom: 1em;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+h2{
+    font-family: ganache, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e24789;
+    font-size: 25pt;
+    line-height: 1em;
+    
+}
+
+section{ 
+    margin-bottom: 2em;
+}
+
+h3{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e24789;
+    font-size: 17pt;
+    margin: 0em 0em -.6em 0em;
+}
+
+a{
+    text-decoration: none;
+}
+
+figure {
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+li{
+    display: inline;
+    font-family: semplicitapro, sans-serif; 
+    text-decoration: none;
+    font-size: 15pt;
+    color: #fb8500;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+ul li a{
+    color: #fb8500;
+}
+
+footer{
+    font-size: 10pt;
+    background-color: #fb8500;
+    padding: .5em;
+
+}
+
+footer p{
+    color: #fcfcfc;
+}
