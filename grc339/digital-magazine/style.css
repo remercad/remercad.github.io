@@ -1,100 +1,195 @@
 /*CSS document*/
 
 body {
-    background-color: #fcfcfc;
-    
+	background-color: #fcfcfc;
+}
+
+h1 {
+	max-width: 10em;
+	max-height: 20em;
+}
+
+p {
+	color: #262626;
+	font-family: semplicitapro, sans-serif;
+	text-decoration: none;
+	margin: 0em 0em .5em 0em;
+}
+
+section.mainstory p {
+	padding: 0em 5em .5em 0em;
+}
+
+aside {
+	font-family: semplicitapro, sans-serif;
+	text-decoration: none;
 
 }
 
-h1 img{
-    margin-bottom: -2em;
-}
-p{
-    color: #262626;
-    font-family: semplicitapro, sans-serif; 
-    text-decoration: none; 
-    
-}
-
-aside{
-    font-family: semplicitapro, sans-serif; 
-    text-decoration: none;
-    
-}
-
-figcaption{
-    font-family: semplicitapro, sans-serif; 
-    text-decoration: none;
-    font-size: 10pt;
-    margin-bottom: 1em;
+figcaption {
+	font-family: semplicitapro, sans-serif;
+	text-decoration: none;
+	font-size: .8em;
+	margin-bottom: 1em;
 }
 
 div.container {
-    max-width: 40em;
-    margin: auto;
+	max-width: 60em;
+	margin: 0 auto 3em;
 }
 
-h2{
-    font-family: ganache, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #e24789;
-    font-size: 25pt;
-    line-height: 1em;
-    
+h2 {
+	font-family: ganache, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #e24789;
+	font-size: 2.5em;
+	line-height: 1em;
+	margin-bottom: 0.2em;
+
 }
 
-section{ 
-    margin-bottom: 2em;
+section {
+	margin-bottom: 2em;
 }
 
-h3{
-    font-family: semplicitapro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #e24789;
-    font-size: 17pt;
-    margin: 0em 0em -.6em 0em;
+h3 {
+	font-family: semplicitapro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #e24789;
+	font-size: 1.5em;
+	margin: 0em;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 figure {
-    margin: auto;
+	margin: auto;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
-li{
-    display: inline;
-    font-family: semplicitapro, sans-serif; 
-    text-decoration: none;
-    font-size: 15pt;
-    color: #fb8500;
-    padding: 1em;
+header {
+	margin-bottom: 2em;
+}
+
+
+li {
+	display: inline;
+	font-family: semplicitapro, sans-serif;
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #fb8500;
+	margin-right: .8em;
+
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    
-}
-
-ul li a{
-    color: #fb8500;
-}
-
-footer{
-    font-size: 10pt;
-    background-color: #fb8500;
-    padding: .5em;
+	list-style-type: none;
+	padding: 0;
 
 }
 
-footer p{
-    color: #fcfcfc;
+ul li a {
+	color: #fb8500;
+
+}
+
+footer {
+	font-size: .8em;
+	background-color: #fb8500;
+	padding: .5em;
+	margin-top: 3em;
+
+}
+
+footer p {
+	color: #fcfcfc;
+}
+
+@media only screen and (min-width:40em) {
+	div.grid {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1.5em;
+	}
+
+	header {
+		grid-column: 1/3;
+	}
+
+	main {
+		grid-column: 1/2;
+	}
+
+	section.without {
+		grid-row: 1;
+		grid-column: 2/3;
+	}
+
+
+	aside {
+		grid-row: 1;
+		grid-column: 2/3;
+	}
+
+	div.lower {
+		display: grid;
+		grid-template-columns: repeat(3fr, 1fr);
+		grid-gap: 1em;
+	}
+
+	div.mainarticle {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 2em;
+	}
+
+	section.mainstory {
+		grid-column: 1/2;
+		grid-row: 1/3;
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.mainstory figure {
+		flex: 1 0 18em;
+		display: flex;
+		flex-direction: column;
+		background-color: #ff0;
+	}
+
+	section.mainstory h3 {
+		flex: 0 0 auto;
+		margin: 0;
+
+	}
+
+	section.mainstory p {
+		flex: 0 0 auto;
+		margin: 0;
+	}
+
+	section.mainstory figure div {
+		flex: 1 0 18em;
+		background-image: url(flag.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	section.mainstory figure div img {
+		height: 100%;
+		opacity: 0;
+	}
+
+	section.mainstory figure figcation {
+		flex: 0 0 3em;
+	}
+
 }
