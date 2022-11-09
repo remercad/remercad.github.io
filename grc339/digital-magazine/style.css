@@ -140,7 +140,7 @@ footer p {
 
 	div.lower {
 		display: grid;
-		grid-template-columns: repeat (3fr, 1fr);
+		grid-template-columns: repeat (3, 1fr);
 		grid-gap: 1em;
 	}
 
