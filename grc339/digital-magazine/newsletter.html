@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Into India</title>
-		<!-- ★ Please include a proper title.-->
-		<!-- Helpful meta tags to fight GitHub aggresive caching-->
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
@@ -21,10 +19,8 @@
 						<img src="into-india-logo.png" alt="Logo of Into India." />
 					</a>
 				</h1>
-				<!-- ★ Please use a proper alt attribute.-->
 				<nav>
 					<ul>
-						<!-- ★ Use as many sections as you want, but replace the dashed lines with actual names for the sections of the publication. You may keep them all linked to the pound symbol, though. -->
 						<li>
 							<a href="#">Food</a>
 						</li>
@@ -41,78 +37,47 @@
 					</ul>
 				</nav>
 			</header>
-			<div class="gallery">
-				<input type="radio" name="item" id="photo1" checked="checked" />
-				<input type="radio" name="item" id="photo2" />
-				<input type="radio" name="item" id="photo3" />
-				<input type="radio" name="item" id="photo4" />
-				<input type="radio" name="item" id="photo5" />
-				<input type="radio" name="item" id="photo6" />
-				<input type="radio" name="item" id="photo7" />
-				<input type="radio" name="item" id="photo8" />
 
-				<main>
-					<figure class="gallery">
-						<img src="henna.jpg" alt="hands decorated in intricate henna designs." />
-						<figcaption>The Henna paste symbolizes good health and prosperity in marriage, and in some cultures, the darker the henna stain, the deeper the love between two individuals.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="dance.jpg" alt="Woman in traditional sari dancing." />
-						<figcaption>Bharatanatyam, Kathakali, Kathak, Manipuri, Kuchipudi, and Odissi are all popular folk dances in India.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="holi.jpg" alt="Hands holding colorful powder." />
-						<figcaption>The Holi Festival is celebrated as a way to welcome in spring, and also is seen as a new beginning where people can release all their inhibitions and start fresh.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="baskets.jpg" alt="Two women holding baskets on their heads wearing traditional Indian clothing with trees in the background." />
-						<figcaption>Villages in India have boundless beauty surrounding them. Usually, these villages are tucked away in deserts, hilly areas, near forests or near some rivers.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="spices.jpg" alt="Bowls and jars of Indian spices." />
-						<figcaption>Cumin, coriander, clove, cinnamon, turmeric, fenugreek, and cardamom are native spices to India.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="umbrella.jpg" alt="Embroidered, colorful umbrellas hanging upsidedown." />
-						<figcaption>Parasols are handmade and sold at markets to keep cool.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="diwali.jpg" alt="Hands holding a candle in a decorative holder." />
-						<figcaption>Diwali is a festival of lights that celebrates the triumph of light over darkness, good over evil and the human ability to overcome.</figcaption>
-					</figure>
-					<figure class="gallery">
-						<img src="candle.jpg" alt="Decoarive, metal incense holder lit with warm glow." />
-						<figcaption>Agarbatti are a large part of the economy and many religions in the region.</figcaption>
-					</figure>
-				</main>
+			<main>
+				<form id="form">
+					<section class="personal-info">
+						<h2>Personal Information</h2>
+						<ul>
+							<li><label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="your full name" /></li>
+							<li><label for="email">Email Address:</label> <input type="email" name="email" id="email" placeholder="your email address" /></li>
+							<li><label for="phone">Phone Number:</label> <input type="tel" name="phone" id="phone" placeholder="your phone number" /></li>
+						</ul>
+					</section>
 
-				<section class="gallery">
-					<label for="photo1">
-						<img src="henna.jpg" alt="Hands decorated in intricate henna designs." />
-					</label>
-					<label for="photo2">
-						<img src="dance.jpg" alt="Woman in traditional sari dancing." />
-					</label>
-					<label for="photo3">
-						<img src="holi.jpg" alt="Hands holding colorful powder." />
-					</label>
-					<label for="photo4">
-						<img src="baskets.jpg" alt="Two women holding baskets on their heads wearing traditional Indian clothing with trees in the background." />
-					</label>
-					<label for="photo5">
-						<img src="spices.jpg" alt="Bowls and jars of Indian spices." />
-					</label>
-					<label for="photo6">
-						<img src="umbrella.jpg" alt="Embroidered, colorful umbrellas hanging upsidedown." />
-					</label>
-					<label for="photo7">
-						<img src="diwali.jpg" alt="Hands holding a candle in a decorative holder." />
-					</label>
-					<label for="photo8">
-						<img src="candle.jpg" alt="Decoarive, metal incense holder lit with warm glow." />
-					</label>
+					<section class="newsletter-options">
+						<h2>Newsletter Options</h2>
+						<h3>How would you like to be contacted?</h3>
+						<ul>
+							<li><input type="radio" id="email" value="email" name="contact" /> <label for="email">Email</label></li>
+							<li><input type="radio" id="text" value="text" name="contact" /> <label for="text">Text Message</label></li>
+							<li><input type="radio" id="call" value="call" name="contact" /> <label for="call">Phone Call</label></li>
+						</ul>
+						<section class="interests">
+							<h3>What content are you interested in?</h3>
+							<ul>
+								<li><input type="checkbox" id="advice" value="advice" name="advice" /> <label for="advice">Travel Advice</label></li>
+								<li><input type="checkbox" id="deals" value="deals" name="deals" /> <label for="deals">Travel Deals and Discounts</label></li>
+								<li><input type="checkbox" id="culture" value="culture" name="culture" /> <label for="culture">Current Events</label></li>
+								<li><input type="checkbox" id="covid" value="covid" name="covid" /> <label for="covid">COVID-19 Updates</label></li>
+								<li><input type="checkbox" id="facts" value="facts" name="facts" /> <label for="facts">Fun Facts</label></li>
+								<li><input type="checkbox" id="recipe" value="recipe" name="recipe" /> <label for="recipe">Recipes</label></li>
+							</ul>
+						</section>
+					</section>
+
+					<section class="feedback">
+						<label for="notes"><h3>Please let us know if you have any questions or concerns.</h3></label><textarea id="notes" name="notes"></textarea>
+					</section>
+				</form>
+				<section class="button">
+					<button type="submit" form="form" value="Subscribe">Subscribe</button>
 				</section>
-			</div>
+			</main>
 
 			<footer>
 				<p>All rights reserved.</p>
